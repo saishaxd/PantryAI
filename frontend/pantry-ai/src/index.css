@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #FAF7F0;
+  color: #1F2933;
+}
+
+:root {
+  --color-primary: #1B4332;
+  --color-primary-light: #40916C;
+
+  --color-accent: #F4A261;
+  --color-accent-strong: #E76F51;
+
+  --color-background: #FAF7F0;
+  --color-surface: #FFFFFF;
+
+  --color-text: #1F2933;
+  --color-text-muted: #667085;
+}
+
+.dark {
+  --color-primary: #74C69D;
+  --color-primary-light: #95D5B2;
+
+  --color-accent: #F4A261;
+  --color-accent-strong: #d76143;
+
+  --color-background: #101714;
+  --color-surface: #17231E;
+
+  --color-text: #F5F7F5;
+  --color-text-muted: #A8B5AE;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-background);
+  color: var(--color-text);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.font-display {
+  font-family: 'DM Serif Display', serif;
+}
