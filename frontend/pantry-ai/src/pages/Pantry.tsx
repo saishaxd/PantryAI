@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom";
 // import { generateRecipe } from "../services/api";
 import { Link } from "react-router-dom";
 
-import { generateRecipe, getRecipeSuggestions } from "../services/api";
+import { getRecipeSuggestions } from "../services/api";
 
 const mealTypes = ["Breakfast", "Lunch", "Dinner", "Snack"];
 
